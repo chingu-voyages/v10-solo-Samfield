@@ -5,7 +5,7 @@ class SideBar extends React.Component {
     
     render(){
         return (
-            <div className="workspace-side-bar">
+            <div className="workspace-side-bar col-3">
                 <input type="search" placeholder="Filter" className="filter" />
                 <div className="sidebar-tabs" >
                     <div className="sidebar-tab-item active">History</div>

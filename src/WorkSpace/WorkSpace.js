@@ -11,9 +11,11 @@ class WorkSpace extends React.Component {
         return (
             <div className="workspace">
                <Navigation />
-               <div className="workspace-body">
+               <div className="container-fluid">
+               <div className="row">
                <SideBar />
                <Body />
+               </div>
                </div>
             </div>
         )

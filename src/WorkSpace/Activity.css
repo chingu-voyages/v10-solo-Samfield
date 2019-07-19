@@ -8,3 +8,11 @@
 .api-response:disabled {
     background-color: #ffffff
 }
+.api-btn {
+    height: 40px;
+    font-size: 0.8em
+}
+select {
+    height: 34px;
+    border: none;
+}
