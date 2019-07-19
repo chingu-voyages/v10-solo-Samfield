@@ -1,0 +1,12 @@
+.workspace {
+    background: #ffffff;
+    height:90%;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.workspace-body {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+}

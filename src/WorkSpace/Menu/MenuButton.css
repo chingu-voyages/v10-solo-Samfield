@@ -1,0 +1,15 @@
+.menu-btn  {
+    float: right;
+}
+.btn-close {
+    background: #cf1b1b;
+}
+
+button {
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 2px;
+    outline: none;
+}

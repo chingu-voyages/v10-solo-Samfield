@@ -1,0 +1,8 @@
+#api-board {
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: #333333;
+    overflow: scroll
+}

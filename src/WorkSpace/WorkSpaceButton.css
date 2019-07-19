@@ -1,0 +1,30 @@
+.workspace-btn {
+    height: 35px;
+    background: #666;
+    position: relative;
+    padding: 5px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 1px
+}
+.workspace-btn:hover {
+    background-color: #555555
+}
+.workspace-btn div {
+    overflow: hidden;
+    max-width: 100px;
+    max-height: 24px;
+}
+.workspace-btn button.btn-close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: none;
+    z-index: 100;
+    border-radius: 60%
+}
+.workspace-btn:hover .btn-close {
+    display: block;
+}
