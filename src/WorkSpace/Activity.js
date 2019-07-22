@@ -7,7 +7,10 @@ class Activity extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleUrl = this.handleUrl.bind(this);
         this.state = {
-            url: ''
+            url: '',
+            params: [],
+            authorization:[],
+            header:[]
         }
     }
     handleChange(e) {
@@ -41,10 +44,10 @@ class Activity extends React.Component {
                                     <div className="btn-group" role="group" aria-label="Button group with nested dropdown">
                                         <button type="button" className="btn btn-primary">Send</button>
                                         <div className="btn-group" role="group">
-                                            <button id="btnGroupDrop1" type="button" className="btn btn-primary dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button id="btnGroupDrop1" type="button" className="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="caret"></span>
                                             </button>
-                                            <div className="dropdown-menu" aria-labelledby="btnGroupDrop1" style={{minWidth: 0+'rem', padding:' 0',margin:0 }}>
+                                            <div className="dropdown-menu" aria-labelledby="btnGroupDrop1" style={{ minWidth: 0 + 'rem', padding: ' 0', margin: 0 }}>
                                                 <button className=" btn btn-primary pull-left">Save as</button>
                                             </div>
                                         </div>
@@ -57,10 +60,10 @@ class Activity extends React.Component {
                                     <div className="btn-group" role="group" aria-label="Button group with nested dropdown">
                                         <button type="button" className="btn btn-secondary">Save</button>
                                         <div className="btn-group" role="group">
-                                            <button id="btnGroupDrop1" type="button" className="btn btn-secondary dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button id="btnGroupDrop1" type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="caret"></span>
                                             </button>
-                                            <div className="dropdown-menu" aria-labelledby="btnGroupDrop1" style={{minWidth: 0+'rem', padding:' 0',margin:0 }}>
+                                            <div className="dropdown-menu" aria-labelledby="btnGroupDrop1" style={{ minWidth: 0 + 'rem', padding: ' 0', margin: 0 }}>
                                                 <button className=" btn btn-primary pull-left">Save as</button>
                                             </div>
                                         </div>
@@ -70,6 +73,50 @@ class Activity extends React.Component {
                         </div>
                     </form>
                 </div>
+                <div>
+                    <ul className="nav nav-tabs">
+                        <li className="nav-item">
+                            <a className="nav-link active" data-toggle="tab" href="#1">Params</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" data-toggle="tab" href="#2">Authorization</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" data-toggle="tab" href="#3">Headers</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" data-toggle="tab" href="#4">Body</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="tab-content">
+                    <div className="tab-pane active" id="1">
+                        <h6>Query Params</h6>
+                        <table className="table table-striped">
+                            <thead>
+                                <th>Key</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" className="form-control" /></td>
+                                    <td><input type="text" className="form-control" /></td>
+                                    <td><input type="text" className="form-control" /></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" className="form-control" /></td>
+                                    <td><input type="text" className="form-control" /></td>
+                                    <td><input type="text" className="form-control" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="tab-pane" id="2">Authorization</div>
+                    <div className="tab-pane" id="3">Headers</div>
+                    <div className="tab-pane" id="4">Body</div>
+                </div>
+
                 {/* <textarea className="api-response" disabled>Hello world</textarea> */}
             </div>
         )

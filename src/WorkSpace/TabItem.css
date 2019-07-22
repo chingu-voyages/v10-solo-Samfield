@@ -1,0 +1,15 @@
+.tab-item .btn-close {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 11px;
+    padding: 0.2px 4px;
+    display: none;
+
+}
+.tab-item {
+    position: relative;
+}
+.tab-item:hover .btn-close{
+    display: block;
+}

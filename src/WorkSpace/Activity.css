@@ -16,3 +16,7 @@ select {
     height: 34px;
     border: none;
 }
+
+.nav-tabs .nav-link {
+    margin-bottom: 0
+}
